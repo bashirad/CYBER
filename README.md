@@ -27,9 +27,9 @@ CYBER is an open-source repository featuring cybersecurity tools implemented in 
 
 ## Usage
 
-- **Open individual PHP files to explore specific techniques.
-- **Use Google Hacking Commands.txt for OSINT queries.
-- **Test modules in a local PHP environment for hands-on practice.
+- Open individual PHP files to explore specific techniques.
+- Use Google Hacking Commands.txt for OSINT queries.
+- Test modules in a local PHP environment for hands-on practice.
   
 ## Contributing
 
