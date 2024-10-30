@@ -1,0 +1,171 @@
+Target: atokash.net
+Profile: intense scan
+Command: nmap -T4 -A -v atokash.net
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-07-13 03:20 Eastern Daylight Time
+
+NSE: Loaded 155 scripts for scanning.
+
+NSE: Script Pre-scanning.
+
+Initiating NSE at 03:20
+
+Completed NSE at 03:20, 0.00s elapsed
+
+Initiating NSE at 03:20
+
+Completed NSE at 03:20, 0.00s elapsed
+
+Initiating NSE at 03:20
+
+Completed NSE at 03:20, 0.00s elapsed
+
+Initiating Ping Scan at 03:20
+
+Scanning atokash.net (54.243.139.151) [4 ports]
+
+Completed Ping Scan at 03:20, 0.06s elapsed (1 total hosts)
+
+Initiating Parallel DNS resolution of 1 host. at 03:20
+
+Completed Parallel DNS resolution of 1 host. at 03:20, 0.03s elapsed
+
+Initiating SYN Stealth Scan at 03:20
+
+Scanning atokash.net (54.243.139.151) [1000 ports]
+
+Discovered open port 22/tcp on 54.243.139.151
+
+Discovered open port 80/tcp on 54.243.139.151
+
+Completed SYN Stealth Scan at 03:21, 5.06s elapsed (1000 total ports)
+
+Initiating Service scan at 03:21
+
+Scanning 2 services on atokash.net (54.243.139.151)
+
+Completed Service scan at 03:21, 6.04s elapsed (2 services on 1 host)
+
+Initiating OS detection (try #1) against atokash.net (54.243.139.151)
+
+Retrying OS detection (try #2) against atokash.net (54.243.139.151)
+
+Initiating Traceroute at 03:21
+
+Completed Traceroute at 03:21, 6.09s elapsed
+
+Initiating Parallel DNS resolution of 6 hosts. at 03:21
+
+Completed Parallel DNS resolution of 6 hosts. at 03:21, 0.03s elapsed
+
+NSE: Script scanning 54.243.139.151.
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.69s elapsed
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.07s elapsed
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.00s elapsed
+
+Nmap scan report for atokash.net (54.243.139.151)
+
+Host is up (0.014s latency).
+
+rDNS record for 54.243.139.151: ec2-54-243-139-151.compute-1.amazonaws.com
+
+Not shown: 998 filtered tcp ports (no-response)
+
+PORT   STATE SERVICE VERSION
+
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+
+| ssh-hostkey: 
+
+|   3072 f2:ca:d0:67:c3:80:6c:b0:49:b3:d6:55:7d:0a:bf:03 (RSA)
+
+|   256 72:ea:d2:70:76:71:f3:9b:cc:fd:73:ff:0c:13:7c:42 (ECDSA)
+
+|_  256 52:1b:2c:1d:8b:13:4f:e2:a1:26:2f:49:08:7b:4c:49 (ED25519)
+
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+
+| http-methods: 
+
+|_  Supported Methods: HEAD GET POST OPTIONS
+
+|_http-title:  Hello 
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Aggressive OS guesses: Linux 2.6.32 (93%), Linux 3.10 (93%), Linux 3.10 - 4.11 (93%), Linux 3.2 - 4.9 (93%), Linux 3.4 - 3.10 (93%), Linux 4.15 - 5.6 (93%), Linux 5.0 - 5.4 (93%), Linux 5.1 (93%), Linux 2.6.32 - 3.10 (92%), Linux 2.6.32 - 3.13 (92%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Uptime guess: 7.638 days (since Tue Jul  5 12:02:38 2022)
+
+Network Distance: 18 hops
+
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+
+IP ID Sequence Generation: All zeros
+
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+TRACEROUTE (using port 80/tcp)
+
+HOP RTT      ADDRESS
+
+1   1.00 ms  Fios_Quantum_Gateway.fios-router.home (192.168.1.1)
+
+2   ...
+
+3   5.00 ms  100.41.23.98
+
+4   18.00 ms 0.csi1.WHPLNYWP-MSE01-BB-SU1.ALTER.NET (140.222.3.212)
+
+5   ... 6
+
+7   18.00 ms 0.ae10.GW13.IAD8.ALTER.NET (140.222.225.219)
+
+8   16.00 ms 204.148.170.194
+
+9   ... 10
+
+11  18.00 ms 52.93.29.2
+
+12  ... 17
+
+18  13.00 ms ec2-54-243-139-151.compute-1.amazonaws.com (54.243.139.151)
+
+
+
+NSE: Script Post-scanning.
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.00s elapsed
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.00s elapsed
+
+Initiating NSE at 03:21
+
+Completed NSE at 03:21, 0.00s elapsed
+
+Read data files from: C:\Program Files (x86)\Nmap
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+
+Nmap done: 1 IP address (1 host up) scanned in 25.24 seconds
+
+           Raw packets sent: 2128 (98.452KB) | Rcvd: 198 (13.838KB)
